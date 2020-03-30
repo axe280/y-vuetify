@@ -1,6 +1,6 @@
 <template>
-  <div class="home-wrapper">
-    <h1>home</h1>
+  <div class="signin">
+    <h1>sign in</h1>
   </div>
 </template>
 

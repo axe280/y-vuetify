@@ -1,6 +1,6 @@
 <template>
-  <div class="home-wrapper">
-    <h1>home</h1>
+  <div class="profile-wrapper">
+    <h1>Profile</h1>
   </div>
 </template>
 
