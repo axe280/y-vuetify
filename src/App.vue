@@ -13,14 +13,12 @@
 <script>
 import AppHeader from './components/AppHeader'
 import AppFooter from './components/AppFooter'
-// import BookList from './components/BookList'
 
 export default {
   name: 'App',
   components: {
     AppHeader,
-    AppFooter,
-    // BookList
+    AppFooter
   },
 
   data: () => ({

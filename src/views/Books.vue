@@ -1,14 +1,13 @@
 <template>
-  <v-container>
-    <div class="books-wrapper">
-      <h1>Books</h1>
-    </div>
-  </v-container>
+  <book-list></book-list>
 </template>
 
 <script>
+import BookList from '../components/BookList'
 
 export default {
-  
+  components: {
+    BookList
+  }
 }
 </script>
