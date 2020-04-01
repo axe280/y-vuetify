@@ -3,9 +3,7 @@
     <app-header></app-header>
 
     <v-content>
-      <v-container>
-        <router-view></router-view>
-      </v-container>
+      <router-view></router-view>
     </v-content>
 
     <app-footer></app-footer>
@@ -13,14 +11,16 @@
 </template>
 
 <script>
-import AppHeader from './components/AppHeader';
-import AppFooter from './components/AppFooter';
+import AppHeader from './components/AppHeader'
+import AppFooter from './components/AppFooter'
+// import BookList from './components/BookList'
 
 export default {
   name: 'App',
   components: {
     AppHeader,
-    AppFooter
+    AppFooter,
+    // BookList
   },
 
   data: () => ({

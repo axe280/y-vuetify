@@ -18,6 +18,18 @@
             <v-list-item-title>{{ menuItem.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item v-if="isUserAuthenticated"
+          @click="signOut"
+        >
+          <v-list-item-icon>
+            <v-icon left>mdi-exit-to-app</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Log out</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list-item-group>
     </v-navigation-drawer>
 
@@ -47,52 +59,87 @@
           <v-icon left v-html="menuItem.icon"></v-icon>
           {{ menuItem.title }}
         </v-btn>
+        <v-btn v-if="isUserAuthenticated"
+          text
+          @click="signOut"
+        >
+          <v-icon left>mdi-exit-to-app</v-icon>
+          Log out
+        </v-btn>
       </v-toolbar-items>
     </v-app-bar>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   data() {
     return {
       drawer: false
     }
   },
+
   computed: {
+    ...mapGetters('userModule', {
+      isUserAuthenticated: 'isUserAuthenticated'
+    }),
+
     menuItems() {
-      return [
-        {
-          icon: 'mdi-bookshelf',
-          title: 'Read',
-          route: '/books'
-        },
-        {
-          icon: 'mdi-desk-lamp',
-          title: 'Learn words',
-          route: '/words'
-        },
-        {
-          icon: 'mdi-account',
-          title: 'Account',
-          route: '/profile'
-        },
-        {
-          icon: 'mdi-exit-to-app',
-          title: 'Log out',
-          route: '/logout'
-        },
-        {
-          icon: 'mdi-location-enter',
-          title: 'Sign in',
-          route: '/signin'
-        },
-        {
-          icon: 'mdi-emoticon-kiss-outline',
-          title: 'Sign up',
-          route: '/signup'
-        }
-      ]
+      if (this.isUserAuthenticated) {
+        return [
+          {
+            icon: 'mdi-bookshelf',
+            title: 'Read',
+            route: '/books'
+          },
+          {
+            icon: 'mdi-desk-lamp',
+            title: 'Learn words',
+            route: '/words'
+          },
+          {
+            icon: 'mdi-account',
+            title: 'Account',
+            route: '/profile'
+          }
+        ]
+      } else {
+        return [
+          {
+            icon: 'mdi-bookshelf',
+            title: 'Read',
+            route: '/books'
+          },
+          {
+            icon: 'mdi-desk-lamp',
+            title: 'Learn words',
+            route: '/words'
+          },
+          {
+            icon: 'mdi-location-enter',
+            title: 'Sign in',
+            route: '/signin'
+          },
+          {
+            icon: 'mdi-emoticon-kiss-outline',
+            title: 'Sign up',
+            route: '/signup'
+          }
+        ]
+      }
+    }
+  },
+
+  methods: {
+    signOut() {
+      this.$confirm('Do you really want to exit?')
+        .then(res => {
+          if (res) {
+            this.$store.dispatch('userModule/signOut')
+          }
+        })
     }
   }
 }
