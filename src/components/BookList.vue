@@ -21,51 +21,7 @@
       <v-col v-for="book in filteredBooks"
         :key="book.id"
       >
-        <v-card class="blue">
-          <v-container>
-            <v-row>
-              <v-col class="px-sm-5"
-                sm="4"
-                md="3"
-              >
-                <v-img
-                  height="200"
-                  src="http://covertopia.com/wp-content/uploads/2015/05/000227_Alt.jpg"
-                ></v-img>
-                <div class="mt-4 text-center">
-                  <v-btn>Youtube</v-btn>
-                </div>
-              </v-col>
-
-              <v-col class="white--text">
-                <v-card-title class="headline">{{ book.title }}</v-card-title>
-                <v-card-text>
-                  <div class="my-2">{{ book.description }}</div>
-                  <div class="my-2">Level: 
-                    {{ getBookLevel(book.level) }},
-                    {{ book.parts }} parts
-                  </div>
-                </v-card-text>
-
-                <v-card-actions>
-                  <v-rating
-                    :value="book.rating"
-                    color="amber"
-                    dense
-                    half-increments
-                    readonly
-                  ></v-rating>
-                  <div class="ml-2">
-                    <span>{{ book.rating }}</span> 
-                    (<span>{{ book.ratingCount }}</span>)
-                  </div>
-                  <v-spacer></v-spacer>
-                  <v-btn>View details</v-btn>
-                </v-card-actions>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
+        <book :book="book"></book>
       </v-col>
     </v-row>
   </v-container>
@@ -73,8 +29,13 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import Book from './BookListItem'
 
 export default {
+  components: {
+    Book
+  },
+
   data() {
     return {
       searchTerm: '',
@@ -106,12 +67,6 @@ export default {
       }
 
       return books
-    }
-  },
-
-  methods: {
-    getBookLevel(level) {
-      return level.join('/')
     }
   }
 }
