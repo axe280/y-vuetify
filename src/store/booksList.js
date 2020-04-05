@@ -19,17 +19,17 @@ export default {
             youtube_id: 'utohnuo'
           },
           {
-            id: 'uouoeuoe14',
+            id: 'tuohnuo',
             title: 'Part 2',
             youtube_id: 'utohnuuouo'
           },
           {
-            id: 'tuohnuuo',
+            id: 'tuohnuo',
             title: 'Part 3',
             youtube_id: 'utoh24nuo'
           },
           {
-            id: 'tuohnuuouuo',
+            id: 'tuohnuo',
             title: 'Part 4',
             youtube_id: 'utoh24unuo'
           }
@@ -46,17 +46,17 @@ export default {
         youtube_playlist_id: 'tuohenuohenut',
         parts: [
           {
-            id: 'tuohnuuuo',
+            id: 'tuohnuo',
             title: 'Part 1',
             youtube_id: 'utoh2nuo'
           },
           {
-            id: 'tuohnuuuuo',
+            id: 'tuohnuo',
             title: 'Part 3',
             youtube_id: 'utohixx24nuo'
           },
           {
-            id: 'tuohnuu22ouuo',
+            id: 'tuohnuo',
             title: 'Part 4',
             youtube_id: 'utoh24uuunuo'
           }
@@ -78,7 +78,7 @@ export default {
             youtube_id: 'utohnuo'
           },
           {
-            id: 'uouoeuoe14',
+            id: 'tuohnuo',
             title: 'Part 2',
             youtube_id: 'utohnuuouo'
           },
@@ -88,24 +88,24 @@ export default {
 
     bookParts: [
       {
-        bookPartId: 'uot2342uouo',
+        bookPartId: 'tuohnuo',
         bookTitle: 'Book title 1',
         partTitle: 'Part 1',
-        youtube_id: 'utoh2nuo',
+        youtube_id: '5qap5aO4i9A',
         content: [
           {
             sentences: [
               {
-                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
-                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'
+                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text',
+                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице'
               },
               {
-                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
-                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'
+                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text',
+                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице'
               },
               {
-                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
-                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'
+                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text',
+                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице'
               }
             ],
           },
@@ -113,16 +113,16 @@ export default {
           {
             sentences: [
               {
-                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
-                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'
+                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text',
+                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице'
               },
               {
-                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
-                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'
+                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text',
+                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице'
               },
               {
-                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
-                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'
+                origText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text',
+                transText: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице'
               }
             ],
           }
@@ -144,6 +144,18 @@ export default {
           {
             origWord: 'hello4',
             transWord: 'привет4'
+          },
+          {
+            origWord: 'hello2',
+            transWord: 'привет2'
+          },
+          {
+            origWord: 'hello3',
+            transWord: 'привет3'
+          },
+          {
+            origWord: 'hello4',
+            transWord: 'привет4'
           }
         ]
       }
@@ -151,6 +163,7 @@ export default {
   },
 
   getters: {
-    getBooksList: state => state.books
+    getBooksList: state => state.books,
+    getBookParts: state => state.bookParts
   }
 }

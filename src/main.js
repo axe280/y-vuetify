@@ -4,8 +4,10 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 import VuetifyConfirm from 'vuetify-confirm'
+import VueYouTubeEmbed from 'vue-youtube-embed'
 
 Vue.use(VuetifyConfirm, { vuetify })
+Vue.use(VueYouTubeEmbed)
 
 // sass
 import './assets/sass/main.sass'

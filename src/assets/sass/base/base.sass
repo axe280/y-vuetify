@@ -26,3 +26,33 @@ h2
 .book-desc
   font-size: 1.1em
   line-height: 1.5em
+
+.youtube-wrapper
+  background-color: #000
+  text-align: center
+
+  iframe
+    vertical-align: top
+    width: 100%
+    height: 360px
+
+.container
+  max-width: 1200px
+
+.v-tabs-items
+  p, .col
+    line-height: 1.3em
+
+/* Min width 740 pixels */
+@media only screen and (min-width: 740px)
+  .youtube-wrapper
+    iframe
+      height: 420px
+/* end media min width 740 pixels */
+
+/* Min width 980 pixels */
+@media only screen and (min-width: 980px)
+  .youtube-wrapper
+    iframe
+      height: 500px
+/* end media min width 980 pixels */

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container max-width="900">
     <v-row class="flex-column flex-sm-row">
       <v-col sm="8" xs="12">
         <v-text-field label="Search book"

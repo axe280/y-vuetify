@@ -10,7 +10,7 @@
       <v-col v-for="part in book.parts"
         :key="part.id"
       >
-        <book-part-list-item :part="part"></book-part-list-item>
+        <book-part-list-item :part="part" :bookId="id"></book-part-list-item>
       </v-col>
     </v-row>
   </v-container>
